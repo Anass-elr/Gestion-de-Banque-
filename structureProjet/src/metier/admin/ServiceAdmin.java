@@ -12,9 +12,13 @@ import java.util.Scanner;
 import java.util.TreeMap;
 
 import Util.typeAuClavier;
+<<<<<<< HEAD
 import dao.IDao;
 import dao.daoFiles.ClientDao;
 import dao.daoMySql.daoClient;
+=======
+import dao.daoFiles.ClientDao;
+>>>>>>> aed6cd9f93df3ece67e53b4f5b10e4e45fd5687c
 import metier.InteractiveConsole;
 import presentation.modele.Banque;
 import presentation.modele.Client;
@@ -27,7 +31,11 @@ public class ServiceAdmin implements IServiceAdmin,InteractiveConsole{
 	
 	
 	private Banque B;
+<<<<<<< HEAD
     private IDao dao=new dao.daoMySql.daoClient();
+=======
+
+>>>>>>> aed6cd9f93df3ece67e53b4f5b10e4e45fd5687c
 
 	public ServiceAdmin(Banque b) {
 		super();
@@ -36,9 +44,13 @@ public class ServiceAdmin implements IServiceAdmin,InteractiveConsole{
 
 	@Override
 	public Client nouveauClient() {
+<<<<<<< HEAD
 		sc.nextLine();
 		String nom=typeAuClavier.StringAuClavier(sc,"Nom");
 		
+=======
+		String nom=typeAuClavier.StringAuClavier(sc,"Nom");
+>>>>>>> aed6cd9f93df3ece67e53b4f5b10e4e45fd5687c
 		String prenom=typeAuClavier.StringAuClavier(sc,"Prenom");
 		String login=typeAuClavier.StringAuClavier(sc,"Login");
 		String pass=typeAuClavier.StringAuClavier(sc,"Password");
@@ -50,7 +62,10 @@ public class ServiceAdmin implements IServiceAdmin,InteractiveConsole{
 		
 		if(!B.getClientsDeBanque().contains(c)) {
 			B.getClientsDeBanque().add(c);
+<<<<<<< HEAD
 			dao.save(c);
+=======
+>>>>>>> aed6cd9f93df3ece67e53b4f5b10e4e45fd5687c
 			return c;
 		}
 		return null;	
@@ -200,43 +215,68 @@ public class ServiceAdmin implements IServiceAdmin,InteractiveConsole{
 		
 		if(c!= null) {
 			if( filtre.equals(Filtre.ID.getLibelle()) ) {
+<<<<<<< HEAD
 				 Long   n=LongAuClavier(sc,"ENTREZ LE NOUVEAU ID :");
+=======
+				 Long   n=LongAuClavier(sc,"Le Nouveau Id");
+>>>>>>> aed6cd9f93df3ece67e53b4f5b10e4e45fd5687c
 					c.setId(n);	
 			}
 			
 			else if(filtre.equals(Filtre.EMAIL.getLibelle())){
+<<<<<<< HEAD
 				sc.nextLine();
+=======
+>>>>>>> aed6cd9f93df3ece67e53b4f5b10e4e45fd5687c
 				String st=typeAuClavier.StringAuClavier(sc,"=> LE NOUVEAU EMAIL ");
 					c.setEmail(st);
 			}	
 			else if(filtre.equals(Filtre.CIN.getLibelle())){
+<<<<<<< HEAD
 				sc.nextLine();
+=======
+>>>>>>> aed6cd9f93df3ece67e53b4f5b10e4e45fd5687c
 				String st=typeAuClavier.StringAuClavier(sc,"=>LE NOUVEAU CIN");
 					c.setCin(st);
 				
 			}	
 			else if(filtre.equals(Filtre.NOM.getLibelle())){
+<<<<<<< HEAD
 				sc.nextLine();
+=======
+>>>>>>> aed6cd9f93df3ece67e53b4f5b10e4e45fd5687c
 			   String st=typeAuClavier.StringAuClavier(sc,"=>LE NOUVEAU NOM");
 			   c.setNom(st);
 		    }
 			else if(filtre.equals(Filtre.PRENOM.getLibelle())){
+<<<<<<< HEAD
 			    	sc.nextLine();
+=======
+>>>>>>> aed6cd9f93df3ece67e53b4f5b10e4e45fd5687c
 				   String st=typeAuClavier.StringAuClavier(sc,"=>LE NOUVEAU PRENOM");
 				   c.setPrenom(st);
 			}
 			else if(filtre.equals(Filtre.LOGIN.getLibelle())) {
+<<<<<<< HEAD
 				 sc.nextLine(); 
+=======
+>>>>>>> aed6cd9f93df3ece67e53b4f5b10e4e45fd5687c
 				 String st=typeAuClavier.StringAuClavier(sc,"=>LE NOUVEAU LOGIN");
 				 c.setLogin(st);
 			}
 			else if(filtre.equals(Filtre.PASS.getLibelle())) {
+<<<<<<< HEAD
 				sc.nextLine();
+=======
+>>>>>>> aed6cd9f93df3ece67e53b4f5b10e4e45fd5687c
 				 String st=typeAuClavier.StringAuClavier(sc,"=>LE NOUVEAU PASSWORD");
 				c.setMotDePasse(st);
 			}
 		}
+<<<<<<< HEAD
 
+=======
+>>>>>>> aed6cd9f93df3ece67e53b4f5b10e4e45fd5687c
 		return c;
 	}
 
@@ -300,6 +340,7 @@ public class ServiceAdmin implements IServiceAdmin,InteractiveConsole{
 	}
 	
 	
+<<<<<<< HEAD
 	public void supprimerTousClients() {
 		B.getClientsDeBanque().clear();
 	}
@@ -310,6 +351,8 @@ public class ServiceAdmin implements IServiceAdmin,InteractiveConsole{
 	}
 	
 	
+=======
+>>>>>>> aed6cd9f93df3ece67e53b4f5b10e4e45fd5687c
 	//Tableau de Bord Methodes
 	  
 	private int nbClients() {
@@ -382,7 +425,11 @@ public class ServiceAdmin implements IServiceAdmin,InteractiveConsole{
 		tab.setNombreTotaleClient((long) nbClients());
 		
 		//-Nombre Compte
+<<<<<<< HEAD
 	    tab.setNombreTotaleCompte((long)nbCompte());
+=======
+	    tab.setNombreTotaleCompte(nbCompte());
+>>>>>>> aed6cd9f93df3ece67e53b4f5b10e4e45fd5687c
 		
 		//-Solde Max
 		tab.setMaxSolde(maxSolde());

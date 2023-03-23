@@ -21,6 +21,7 @@ public class MaBanque {
                                         "212535224433",
                                         "bp@banquePop.ma");
 
+<<<<<<< HEAD
                 maBanque.getClientsDeBanque().add(
                   new Client("xx","xx","xx","xx","xx"));
               
@@ -28,6 +29,12 @@ public class MaBanque {
               
               
               
+=======
+       
+              
+              ServiceIHM menuApp=new ServiceIHM(maBanque);
+              
+>>>>>>> aed6cd9f93df3ece67e53b4f5b10e4e45fd5687c
               menuApp.menuGlobal();
               
                       	

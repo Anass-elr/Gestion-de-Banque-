@@ -118,6 +118,7 @@ public class ServiceClient implements IServiceClient{
 	
 
 	@Override
+<<<<<<< HEAD
 	public boolean modifierProfile(int choixModification,Long id) {
 		 ServiceAdmin Admin = new ServiceAdmin(B);
 		switch(choixModification) {
@@ -126,13 +127,26 @@ public class ServiceClient implements IServiceClient{
 			case 3 : { Admin.modifierClient( Filtre.EMAIL.getLibelle(),id); }; break;
 			case 4 : { Admin.modifierClient( "cin",id); }; break;
 			case 5 : { Admin.modifierClient( "tel",id); }; break;
+=======
+	public boolean modifierProfile(int choixModification) {
+		 ServiceAdmin Admin = new ServiceAdmin(B);
+		switch(choixModification) {
+			case 1 : { Admin.modifierClient("nom"); }; break;
+			case 2 : { Admin.modifierClient( Filtre.PASS.getLibelle()); }; break;
+			case 3 : { Admin.modifierClient( Filtre.EMAIL.getLibelle()); }; break;
+			case 4 : { Admin.modifierClient( "cin"); }; break;
+			case 5 : { Admin.modifierClient( "tel"); }; break;
+>>>>>>> aed6cd9f93df3ece67e53b4f5b10e4e45fd5687c
 		}
 		return false;
 	}
 
+<<<<<<< HEAD
 
 
 
+=======
+>>>>>>> aed6cd9f93df3ece67e53b4f5b10e4e45fd5687c
 	
 
 	@Override

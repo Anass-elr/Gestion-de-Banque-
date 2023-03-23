@@ -1,9 +1,15 @@
 package presentation.modele;
 
+<<<<<<< HEAD
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Objects;
+=======
+import java.util.*;
+
+import collections.Personne;
+>>>>>>> aed6cd9f93df3ece67e53b4f5b10e4e45fd5687c
 
 
 public class Client extends Utilisateur implements Comparable<Client> {
@@ -33,10 +39,17 @@ public class Client extends Utilisateur implements Comparable<Client> {
     public List<Compte> getComptesClient() {
         return comptesClient;
     }
+<<<<<<< HEAD
     public Sexe     getSexe() {
         return sexe;
     }
     public void     setSexe(Sexe sexe) {
+=======
+    public Sexe getSexe() {
+        return sexe;
+    }
+    public void setSexe(Sexe sexe) {
+>>>>>>> aed6cd9f93df3ece67e53b4f5b10e4e45fd5687c
         this.sexe = sexe;
     }
     public void         setEmail(String email) {
@@ -136,10 +149,18 @@ public class Client extends Utilisateur implements Comparable<Client> {
 	@Override
 	public boolean equals(Object obj) {
 		if( obj instanceof Client ) {
+<<<<<<< HEAD
 			if( nom.equals(((Client) obj).getNom())        &&
 			    prenom.equals(((Client) obj).getPrenom())  &&
 			    cin.equals(((Client) obj).getCin())) 
 				    return true;	
+=======
+			if(  nom.equals(((Client) obj).getNom())         &&
+				   prenom.equals(((Client) obj).getPrenom()) &&
+					cin.equals(((Client) obj).getCin() ) )  return true;
+			
+			return false;
+>>>>>>> aed6cd9f93df3ece67e53b4f5b10e4e45fd5687c
 		}
 		return false;
 	}

@@ -26,7 +26,13 @@ public class Banque {
                     }
     
     
+<<<<<<< HEAD
 
+=======
+    public Client getClient(Client x) {
+    	clientsDeBanque.con
+    }
+>>>>>>> aed6cd9f93df3ece67e53b4f5b10e4e45fd5687c
 
     public Long             getIdBanque() {
         return idBanque;

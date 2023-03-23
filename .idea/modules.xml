@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+<<<<<<< HEAD
       <module fileurl="file://$PROJECT_DIR$/StructureProjet.iml" filepath="$PROJECT_DIR$/StructureProjet.iml" />
+=======
+      <module fileurl="file://$PROJECT_DIR$/TP DAO et Swing.iml" filepath="$PROJECT_DIR$/TP DAO et Swing.iml" />
+>>>>>>> aed6cd9f93df3ece67e53b4f5b10e4e45fd5687c
     </modules>
   </component>
 </project>

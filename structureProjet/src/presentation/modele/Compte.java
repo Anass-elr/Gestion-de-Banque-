@@ -1,6 +1,9 @@
 package presentation.modele;
 
+<<<<<<< HEAD
 import java.sql.Date;
+=======
+>>>>>>> aed6cd9f93df3ece67e53b4f5b10e4e45fd5687c
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.LocalTime;
@@ -10,12 +13,20 @@ import java.util.List;
 public class Compte {
 	
 	
+<<<<<<< HEAD
 	private static long     compteur = 1;
     private String          numeroCompte;
     private Double          solde;
     private LocalDateTime   dateCreation;
     private Client          propriataire ;
 
+=======
+	private static long          compteur = 1;
+    private String          numeroCompte;
+    private Double          solde;
+    private LocalDateTime   dateCreation;
+    private Client          propriataire;
+>>>>>>> aed6cd9f93df3ece67e53b4f5b10e4e45fd5687c
     private List<Log>       logs = new ArrayList<>();
 
  
@@ -93,6 +104,9 @@ public class Compte {
 
 
 
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> aed6cd9f93df3ece67e53b4f5b10e4e45fd5687c
 }

@@ -15,7 +15,11 @@ public interface IServiceClient {
         //--Surcharge
         boolean retrait  (Compte c,int choixRetrait);
 
+<<<<<<< HEAD
         boolean modifierProfile(int choixModification,Long id);
+=======
+        boolean modifierProfile(int choixModification);
+>>>>>>> aed6cd9f93df3ece67e53b4f5b10e4e45fd5687c
         
         Double afficherSolde();
         Compte choisirCompte();

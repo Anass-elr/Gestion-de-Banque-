@@ -1,6 +1,9 @@
 package metier.admin;
 
+<<<<<<< HEAD
 import java.util.ArrayList;
+=======
+>>>>>>> aed6cd9f93df3ece67e53b4f5b10e4e45fd5687c
 import java.util.InputMismatchException;
 import java.util.List;
 
@@ -12,6 +15,7 @@ import presentation.modele.Banque;
 import presentation.modele.Client;
 import presentation.modele.Compte;
 import presentation.modele.Filtre;
+<<<<<<< HEAD
 import presentation.modele.TableauDeBord;
 
 public class ServiceIHMAdmin implements IServiceIHMAdmin,InteractiveConsole {
@@ -19,10 +23,23 @@ public class ServiceIHMAdmin implements IServiceIHMAdmin,InteractiveConsole {
 	private Banque B;
 
 	private ServiceAdmin srvAdmin;
+=======
+
+public class ServiceIHMAdmin implements IServiceIHMAdmin,InteractiveConsole{
+
+	private Banque B;
+	
+	private ServiceAdmin srvAdmin;
+	private ClientDao DaoClient  ;
+>>>>>>> aed6cd9f93df3ece67e53b4f5b10e4e45fd5687c
 	
 	public ServiceIHMAdmin(Banque b) {
 		super();
 		B = b;
+<<<<<<< HEAD
+=======
+		DaoClient=DaoClient;
+>>>>>>> aed6cd9f93df3ece67e53b4f5b10e4e45fd5687c
 		srvAdmin=new ServiceAdmin(B);
 	}
 	
@@ -39,7 +56,11 @@ public class ServiceIHMAdmin implements IServiceIHMAdmin,InteractiveConsole {
 			System.out.println("=*=                                                  =*=");
 			System.out.println("=*=**************************************************=*=");
 			System.out.println("= Tapez 1 pour le [SERVICE CRUD]                       =");
+<<<<<<< HEAD
 			System.out.println("= Tapez 2 pour le [SERVICE INFORMATION]                =");
+=======
+			System.out.println("= Tapez 2 pour le [SERVICE INFORMATION]               =");
+>>>>>>> aed6cd9f93df3ece67e53b4f5b10e4e45fd5687c
 			System.out.println("= Tapez 3 pour le [SERVICE TRIE]                       =");
 			System.out.println("= Tapez 4 pour le [TABLEAU DE BORD - STATISTIQUES]     =");
 			System.out.println("= Tapez 5 pour se deconecter                           =");
@@ -65,7 +86,11 @@ public class ServiceIHMAdmin implements IServiceIHMAdmin,InteractiveConsole {
 						menuAjout(); 
 					}break ; 
 					case 4 :{ 
+<<<<<<< HEAD
 						menuSuppression();
+=======
+						
+>>>>>>> aed6cd9f93df3ece67e53b4f5b10e4e45fd5687c
 					} break;  
 				}
 			}
@@ -133,7 +158,13 @@ public class ServiceIHMAdmin implements IServiceIHMAdmin,InteractiveConsole {
 		
 	}
 	
+<<<<<<< HEAD
 
+=======
+	
+	
+	
+>>>>>>> aed6cd9f93df3ece67e53b4f5b10e4e45fd5687c
 	public int menuCRUD() {
 		Integer choix;
 		
@@ -143,7 +174,11 @@ public class ServiceIHMAdmin implements IServiceIHMAdmin,InteractiveConsole {
 			System.out.println("=*=           BIENVENUE CHER(E) ADMIN                 =*=");
 			System.out.println("=*=**************************************************=*=*");
 			
+<<<<<<< HEAD
 			System.out.println("=*=*=*=*=*=*=*  MENU [ADMINISTRATEUR : CRUD] =*=*=*=*=*=");
+=======
+			System.out.println("=*=*=*=*=*=*=*=  MENU [ADMINISTRATEUR] =*=*=*=*=*=*=*=*=");
+>>>>>>> aed6cd9f93df3ece67e53b4f5b10e4e45fd5687c
 			System.out.println("=*=                                                  =*=");
 			System.out.println("=*=**************************************************=*=");
 			System.out.println("= Tapez 1 pour le [MENU DE RECHERHCE]                  =");
@@ -172,8 +207,12 @@ public class ServiceIHMAdmin implements IServiceIHMAdmin,InteractiveConsole {
 					case 3 :{
 						menuAjout(); 
 					}break ; 
+<<<<<<< HEAD
 					case 4 :{
 						menuSuppression();
+=======
+					case 4 :{ 
+>>>>>>> aed6cd9f93df3ece67e53b4f5b10e4e45fd5687c
 						
 					} break;  
 				}
@@ -192,9 +231,13 @@ public class ServiceIHMAdmin implements IServiceIHMAdmin,InteractiveConsole {
 		Integer choix;
 		try {
 			long n=typeAuClavier.LongAuClavier(sc,"=> ID DU CLIENT A MODIFIER : ");
+<<<<<<< HEAD
 			 
 			if(srvAdmin.chercherClientParId(n) != null) {
 			
+=======
+			  
+>>>>>>> aed6cd9f93df3ece67e53b4f5b10e4e45fd5687c
 			do {
 				System.out.println("=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=");
 				System.out.println("=*=           BIENVENUE CHER(E) ADMIN                 =*=");
@@ -254,11 +297,15 @@ public class ServiceIHMAdmin implements IServiceIHMAdmin,InteractiveConsole {
 					break;
 				}
 			   
+<<<<<<< HEAD
 			} while(choix >= 1 && choix < 8);
 			}
 			else 
 				System.out.println("PAS DE CLIENT AVEC ID ENTREZ");
 			
+=======
+			} while(choix >= 1 && choix < 3);
+>>>>>>> aed6cd9f93df3ece67e53b4f5b10e4e45fd5687c
 		} catch (Exception e1) {
 			// TODO Auto-generated catch block
 			e1.printStackTrace();
@@ -289,6 +336,7 @@ public class ServiceIHMAdmin implements IServiceIHMAdmin,InteractiveConsole {
 		    	choix=typeAuClavier.
 		    		 IntegerAuClavier(sc, "=> Entrez Votre Choix :");
 		    	switch(choix) {
+<<<<<<< HEAD
 					case 1 :{ 
 						menuRechercheClient();
 					} break ; 
@@ -302,6 +350,22 @@ public class ServiceIHMAdmin implements IServiceIHMAdmin,InteractiveConsole {
 					};break;
 					
 		       }
+=======
+				case 1 :{ 
+					menuRechercheClient();
+				} break ; 
+				
+				case 2:{
+					menuRechercheCompte();			
+				};break;
+				
+				case 3:{
+					srvAdmin.AfficherClients()	;	
+				};break;
+				
+				
+		    	}
+>>>>>>> aed6cd9f93df3ece67e53b4f5b10e4e45fd5687c
 			}
 			catch(Exception e) {
 				System.out.println(e.getMessage());
@@ -376,8 +440,11 @@ public class ServiceIHMAdmin implements IServiceIHMAdmin,InteractiveConsole {
 					
 		
 			    case 4 :{  
+<<<<<<< HEAD
 					sc.nextLine();
 
+=======
+>>>>>>> aed6cd9f93df3ece67e53b4f5b10e4e45fd5687c
 					 String ch=typeAuClavier.StringAuClavier(sc, "Entrez CIN");
 					  Client c=srvAdmin.chercherClientParCin(ch);
 					  if(c==null) 
@@ -389,13 +456,21 @@ public class ServiceIHMAdmin implements IServiceIHMAdmin,InteractiveConsole {
 				case 5 :{  
 					sc.nextLine();
 					 String ch=typeAuClavier.StringAuClavier(sc, "Entrez EMAIL");
+<<<<<<< HEAD
 					  Client c=null;
 					  c=srvAdmin.chercherClientParEmail(ch);
+=======
+					  Client c=srvAdmin.chercherClientParEmail(ch);
+>>>>>>> aed6cd9f93df3ece67e53b4f5b10e4e45fd5687c
 					  if(c==null) 
 						   System.out.println("Pas de Client");
 					  else 
 						 System.out.println(c.toString()); 
+<<<<<<< HEAD
 				 }break; 
+=======
+				 } break ; 
+>>>>>>> aed6cd9f93df3ece67e53b4f5b10e4e45fd5687c
 			   }
 			}
 			catch(Exception e) {
@@ -403,6 +478,10 @@ public class ServiceIHMAdmin implements IServiceIHMAdmin,InteractiveConsole {
 				break;
 			}
 			
+<<<<<<< HEAD
+=======
+		
+>>>>>>> aed6cd9f93df3ece67e53b4f5b10e4e45fd5687c
 		}while(schoix>=1 && schoix<=5);
 		return 1;
 	}
@@ -481,8 +560,13 @@ public class ServiceIHMAdmin implements IServiceIHMAdmin,InteractiveConsole {
 			System.out.println("=*=*=*=*=*=*=*=*=*=  MENU [D'AJOUT] =*=*=*=*=*=*=*=*=*=*");
 			System.out.println("=*=                                                  =*=");
 			System.out.println("=*=**************************************************=*=");
+<<<<<<< HEAD
 			System.out.println("= Tapez 1 AJOUTER NV CLIENT                           =");
 			System.out.println("= Tapez 2 <AJOUTER NV COMPTE                           =");
+=======
+			System.out.println("= Tapez 1  AJOUTER NV CLIENT                           =");
+			System.out.println("= Tapez 2  AJOUTER NV COMPTE                           =");
+>>>>>>> aed6cd9f93df3ece67e53b4f5b10e4e45fd5687c
 			System.out.println("= AUTRE POUR MENU PRECEDENT                            =");
 			System.out.println("=*=                                                  =*=");
 			System.out.println("=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*");
@@ -518,6 +602,7 @@ public class ServiceIHMAdmin implements IServiceIHMAdmin,InteractiveConsole {
 
 	@Override
 	public int menuSuppression() {
+<<<<<<< HEAD
 	
 			Integer choix;
 			
@@ -820,10 +905,21 @@ public class ServiceIHMAdmin implements IServiceIHMAdmin,InteractiveConsole {
 			} while(choix >= 1 && choix < 7);
 			return 0;
 			
+=======
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public int tableauDeBord() {
+		// TODO Auto-generated method stub
+		return 0;
+>>>>>>> aed6cd9f93df3ece67e53b4f5b10e4e45fd5687c
 	}
 
 	@Override
 	public int menuTrie() {
+<<<<<<< HEAD
 		  Integer choix;
 	       TableauDeBord  tab=srvAdmin.calculerEtAfficherStatistiques(B);
 	       List<Client> Cl=new ArrayList<Client>(B.getClientsDeBanque());
@@ -886,6 +982,10 @@ public class ServiceIHMAdmin implements IServiceIHMAdmin,InteractiveConsole {
 			} while(choix >= 1 && choix < 7);
 			return 0;
 			
+=======
+		// TODO Auto-generated method stub
+		return 0;
+>>>>>>> aed6cd9f93df3ece67e53b4f5b10e4e45fd5687c
 	}
 
 

@@ -158,6 +158,7 @@ public class ServiceIHMClient implements IServiceIHMClient,InteractiveConsole{
 			
 			switch(choix) {
 				case 1 :{  
+<<<<<<< HEAD
 					SrvClient.modifierProfile(1,c.getId());
 						} break ; 
 				case 2 :{
@@ -168,6 +169,18 @@ public class ServiceIHMClient implements IServiceIHMClient,InteractiveConsole{
 				}break ; 
 				case 4 :{ 
 					SrvClient.modifierProfile(5,c.getId());
+=======
+					SrvClient.modifierProfile(1);
+						} break ; 
+				case 2 :{
+					SrvClient.modifierProfile(3);
+				} break ; 
+				case 3 :{
+					SrvClient.modifierProfile(4);
+				}break ; 
+				case 4 :{ 
+					SrvClient.modifierProfile(5); 
+>>>>>>> aed6cd9f93df3ece67e53b4f5b10e4e45fd5687c
 				} ; break ;  
 			}
 		} while(choix >= 1 && choix < 6  );

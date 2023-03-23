@@ -23,11 +23,19 @@ public class ServiceIHM implements IServiceIHM,InteractiveConsole{
 	
 	private ServiceIHMClient homeClient ;
 	private ServiceIHMAdmin homeAdmin ;
+<<<<<<< HEAD
+=======
+	private ClientDao ClientDao;
+>>>>>>> aed6cd9f93df3ece67e53b4f5b10e4e45fd5687c
 	// private IDao CompteDao=new ;
 	
 	public ServiceIHM(Banque b) {
 		super();
 		B = b;
+<<<<<<< HEAD
+=======
+	//	homeClient = new ServiceIHMClient(B);
+>>>>>>> aed6cd9f93df3ece67e53b4f5b10e4e45fd5687c
 		homeAdmin= new ServiceIHMAdmin(B);
 		Auth=new ValiderFormLogin(B);
 

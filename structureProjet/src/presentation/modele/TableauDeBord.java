@@ -39,7 +39,11 @@ public class TableauDeBord {
     public void setNombreTotaleClient(Long nombreTotaleClient) {
         this.nombreTotaleClient = nombreTotaleClient;
     }
+<<<<<<< HEAD
     public void setNombreTotaleCompte(Long i) {
+=======
+    public void setNombreTotaleCompte(int i) {
+>>>>>>> aed6cd9f93df3ece67e53b4f5b10e4e45fd5687c
         this.nombreTotaleCompte = i;
     }
     public void setNomClientLePlusRiche(String nomClientLePlusRiche) {

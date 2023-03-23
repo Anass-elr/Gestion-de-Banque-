@@ -2,8 +2,12 @@ package presentation.modele;
 
 public enum Sexe {
 
+<<<<<<< HEAD
     HOMME(0,"H", "Homme"),
        FEMME(1,"F", "Femme");
+=======
+    HOMME(0,"H", "Homme"), FEMME(1,"F", "Femme");
+>>>>>>> aed6cd9f93df3ece67e53b4f5b10e4e45fd5687c
 
         String libelle, abreviation;
         Long indice;
